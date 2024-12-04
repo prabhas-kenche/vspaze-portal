@@ -1,0 +1,53 @@
+.company-logo {
+    height: 80%;
+    width: 95%;
+    margin-top: 42px;
+    border: 2px solid #000000;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #feffff;
+}
+
+.heading {
+    font-weight: bold;
+    padding: 10px;
+    padding-top: 25px;
+}
+
+.input-field{
+    border: 1px solid #000000;
+}
+
+.login-button {
+    background-color: #008080;
+    border-width: 0;
+}
+
+/* This will position the eye icon at the right corner of the input field */
+.relative {
+    position: relative;
+  }
+  
+  input[type="password"] {
+    padding-right: 2.5rem; /* Adjust padding to make space for the icon */
+    border: 2px solid #000000;
+  }
+
+  input[type="text"] {
+    border: 2px solid #000000;
+  }
+  
+  .absolute {
+    position: absolute;
+    top: 45%;
+    right: 10px; /* Right side of the input field */
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,62 @@
+.loader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #008080;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* For small devices (phones, less than 600px wide) */
+@media (max-width: 600px) {
+    .loader {
+        padding: 0 10px; /* Add some padding to ensure proper centering on small screens */
+    }
+}
+
+/* For medium devices (tablets, 600px to 1024px wide) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .loader {
+        padding: 0 20px; /* Adjust padding for tablets */
+    }
+}
+
+/* For large devices (desktops, more than 1024px wide) */
+@media (min-width: 1024px) {
+    .loader {
+        padding: 0 40px; /* Add extra padding for larger screens if needed */
+    }
+}
+
+
+.loader-image {
+    width: 0px; /* Adjust width to fit loader size */
+    height: 80px; /* Adjust height to fit loader size */
+    margin: 0 auto; /* Center image horizontally */
+    object-fit: contain; /* Ensure the image maintains its aspect ratio */
+    animation: spin 2s linear infinite; /* Add a spinning animation (optional) */
+}
+
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .loader-image {
+        width: 50px;
+        height: 50px; /* Scale down the image for smaller devices */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+    .loader-image {
+        width: 50px;
+        height: 50px; /* Adjust size for medium devices */
+    }
+}
+
+@media (min-width: 1024px) {
+    .loader-image {
+        width: 280px;
+        height: 280px; /* Default size for larger devices */
+    }
+}
